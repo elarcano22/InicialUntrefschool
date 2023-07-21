@@ -18,6 +18,7 @@ nav  {
     background-color: var(--color3);
     color: var(--color5);
     text-decoration-line: none;
+
 }
 
 .div-principal {
@@ -31,9 +32,12 @@ nav  {
     color: var(--color5);
     align-items: center;
     justify-content: center;
+
 }
+
 .div-principal > h1 {
     font-size: 2.5rem;
+    animation-name: tracking-in-expand 2s infinite;
 }
 #banner-principal {
     width: 70%;
@@ -48,7 +52,13 @@ nav  {
 
 /* @media (min-width: 320px) { */
 /* adaptacion celulares 320px */
+.somos , .elegirnos {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 80%;
 
+}
 .propuestas {
     display: flex;
     flex-direction: column;
@@ -57,32 +67,34 @@ nav  {
     text-align: center;
 
 }
-.propuestas > div > a{
+.div-propuestas > div > a{
     text-decoration: none;
     text-decoration-line: none;
     outline-style: none;
+    color: #00425A;
+    font-size: small;
 }
 #iconos {
     width: 80px;
     height: 80px;
 }
-.nav-header a {
+.navbar a {
     color: #eff5f5;
-    outline-style: none;
+    /* outline-style: none;
     font-size: small;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    display:none;
+    display:none; */
 }
-header nav::before {
+/* header nav::before {
     content: '\002630';   
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 2rem;
     color:#eff5f5;
     
-  }
+  } */
   .div-noticias {
     display: flex;
     flex-wrap: wrap;
@@ -103,13 +115,13 @@ header nav::before {
     width: 50%;
     height: 50%;
 }
-.noticias article p {
+/* .noticias article p {} */
     /* text-align: center; */
-}
+
 /* } */
 
 /* footer */
-footer {
+/* footer {
     background-color: #1f8a70;
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +157,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 1rem;
-}
+} */
 
 /* Adaptaciones para 768px */
 
@@ -267,5 +279,118 @@ footer {
 
 /* adaptaciones 1020px */
 @media screen and (min-width: 1020px) {
-    
+
+    .somos, .elegirnos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2rem;
+        align-items:flex-start
+    }
+    section > div > p {
+        font-size: 1.5rem;
+    }
+    #portada-somos {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        padding: 1.5rem;
+    }
+    #portada-elegirnos {
+        width: 45%;
+        height: 45%;
+        display: flex;
+        padding: 1.5rem;
+    }
+   .div-somos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+   }
+   .div-elegirnos {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    width: 90%;
 }
+.propuestas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    .div-propuestas {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .div-propuestas > div {
+        padding: 5vw;
+        width: 250px;
+        height: 250px;
+    }
+    .propuestas > div > a{
+        text-decoration: none;
+        text-decoration-line: none;
+        outline-style: none;
+    }
+    #iconos {
+        width: 100px;
+        height: 100px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .redes , .contacto {
+        display: flex;
+        flex-direction: column;
+
+    }
+    a
+    element.style {
+    }
+    @media (min-width: 992px)
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    .collapse:not(.show) {
+        display: none;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    user agent stylesheet
+    div {
+        display: block;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .navbar a {
+        color: #eff5f5;
+        background-color: var(--color3)
+        
+    }
