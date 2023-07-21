@@ -347,9 +347,9 @@ svg {
         text-align: center;
         gap: 15px;
     }
-    a
+    /* a
     element.style {
-    }
+    } */
     .navbar a ,.nav-item {
         color: #eff5f5;
         background-color: var(--color3);
